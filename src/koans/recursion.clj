@@ -16,7 +16,11 @@
     (cons (last coll) (recursive-reverse (butlast coll)))))
 
 (defn factorial [n]
-  __)
+  (loop [n n
+         acc 1]
+    (if (zero? n)
+      acc
+      (recur (dec n) (* acc n)))))
 
 (meditations
   "Recursion ends with a base case"
