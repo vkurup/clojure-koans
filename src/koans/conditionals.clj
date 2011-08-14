@@ -39,9 +39,9 @@
 
   "In case of emergency, sound the alarms"
   (= :sirens
-     (explain-defcon-level __))
+     (explain-defcon-level :cocked-pistol))
 
   "But admit it when you don't know what to do"
-  (= __
+  (= :say-what?
      (explain-defcon-level :yo-mama)))
 
