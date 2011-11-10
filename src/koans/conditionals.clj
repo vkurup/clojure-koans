@@ -44,4 +44,3 @@
   "But admit it when you don't know what to do"
   (= :say-what?
      (explain-defcon-level :yo-mama)))
-

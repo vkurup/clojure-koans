@@ -15,5 +15,4 @@
   (= #{2 3} (clojure.set/intersection #{1 2 3 4} #{2 3 5}))
 
   "But don't forget about the difference"
-  (= #{1 4} (clojure.set/difference #{1 2 3 4 5} #{2 3 5})))
-
+  (= __ (clojure.set/difference #{1 2 3 4 5} #{2 3 5})))

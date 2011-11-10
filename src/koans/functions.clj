@@ -17,13 +17,13 @@
   (= 15 (#(+ %1 %2 %3) 4 5 6))
 
   "One function can beget another"
-  (= 9 ((fn []
-            ((fn [a b] (+ a b))
-              4 5))))
+  (= __ ((fn []
+           ((fn [a b] (__ a b))
+            4 5))))
 
   "Higher-order functions take function arguments"
-  (= 25 ((fn [f] (f 5))
-          (fn [n] (* n n))))
+  (= 25 (___
+         (fn [n] (* n n))))
 
   "But they are often better written using the names of functions"
   (= 25 ((fn [f] (f 5)) square)))

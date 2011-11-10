@@ -1,7 +1,6 @@
 (defn square [x] (* x x))
 
 (meditations
-
   "One may know what they seek by knowing what they do not seek"
   (= [true false true] (let [not-a-symbol? (complement symbol?)]
                   (map not-a-symbol? [:a 'b "c"])))

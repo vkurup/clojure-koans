@@ -23,9 +23,9 @@ completed.
 The only things you'll need to run the Clojure Koans are:
 
 - JRE 1.5 or higher
-- [clojure-1.3.0-alpha4.jar](https://github.com/downloads/clojure/clojure/clojure-1.3.0-alpha4.zip)
+- [clojure-1.3.0.jar](http://repo1.maven.org/maven2/org/clojure/clojure/1.3.0/clojure-1.3.0.zip)
 
-clojure-1.3.0-alpha4.jar needs to be in a directory `lib` under this project.
+clojure-1.3.0.jar needs to be in a directory `lib` under this project.
 
 You can use [Leiningen](http://github.com/technomancy/leiningen) to
 automatically install the Clojure jar in the right place. Leiningen will also
@@ -84,14 +84,18 @@ run:
 
 Here are some interesting commands you might try, once you're in a running REPL:
 
-    (find-doc "vec")
-    (find-doc #"vec$")
-    (doc vec)
+```clojure
+(find-doc "vec")
+(find-doc #"vec$")
+(doc vec)
+```
 
 And if those still don't make sense:
 
-    (doc doc)
-    (doc find-doc)
+```clojure
+(doc doc)
+(doc find-doc)
+```
 
 will show you what those commands mean.
 
@@ -125,6 +129,7 @@ have any questions or want more direction before you start pitching in.
 - Mark Simpson
 - Mike Jansen
 - Caleb Phillips
+- Doug South
 
 
 ### Credits
@@ -147,4 +152,3 @@ Eclipse Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
 which can be found in the file epl-v10.html at the root of this distribution.
 By using this software in any fashion, you are agreeing to be bound by
 the terms of this license.
-
